@@ -35,6 +35,7 @@ const HomePage = () => {
     <>
     <Head>
       <title>React Meetups</title>
+      <meta name="description" content="Browse a huge list of meetups"/>
     </Head>
       <Layout>
         <MeetupList meetups={DUMMY_MEETUPS} />
