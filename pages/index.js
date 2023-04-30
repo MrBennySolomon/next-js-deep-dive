@@ -1,5 +1,6 @@
 import Layout from "../components/layout/Layout";
 import MeetupList from "../components/meetups/MeetupList";
+import Head from 'next/head';
 
 const DUMMY_MEETUPS = [
   {
@@ -31,9 +32,14 @@ const DUMMY_MEETUPS = [
 const HomePage = () => {
   
   return (
-    <Layout>
-      <MeetupList meetups={DUMMY_MEETUPS} />
-    </Layout>
+    <>
+    <Head>
+      <title>React Meetups</title>
+    </Head>
+      <Layout>
+        <MeetupList meetups={DUMMY_MEETUPS} />
+      </Layout>
+    </>
   );
 };
 
